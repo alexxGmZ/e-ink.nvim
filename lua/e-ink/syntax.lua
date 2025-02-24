@@ -50,8 +50,8 @@ function M.generate_syntax()
 
    set_hl("DiagnosticOk", { fg = everforest.green1 })
    set_hl("DiagnosticHint", { fg = everforest.blue1 })
-   set_hl("DiagnosticInfo", { fg = everforest.cyan })
-   set_hl("DiagnosticWarn", { fg = everforest.yellow })
+   set_hl("DiagnosticInfo", { fg = everforest.cyan1 })
+   set_hl("DiagnosticWarn", { fg = everforest.yellow1 })
    set_hl("DiagnosticError", { fg = everforest.red1 })
 
    set_hl("markdownLinkText", { underline = false })
