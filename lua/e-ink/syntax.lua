@@ -41,6 +41,7 @@ function M.generate_syntax()
    set_hl("String", { fg = mono[11] })
    set_hl("Title", { fg = mono[16], bold = true })
    set_hl("Type", { fg = mono[13] })
+   set_hl("Visual", { bg = mono[4] })
    set_hl("WarningMsg", { fg = everforest.yellow1 })
    set_hl("WinSeparator", { fg = mono[9] })
 
