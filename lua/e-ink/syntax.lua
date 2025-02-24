@@ -8,7 +8,6 @@ local function set_hl(group, styles)
 end
 
 function M.generate_syntax()
-   print("generate_syntax()")
    local mono = require("e-ink.palette").mono
    local everforest = require("e-ink.palette").everforest
 
