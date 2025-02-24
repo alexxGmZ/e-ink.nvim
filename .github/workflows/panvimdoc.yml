@@ -1,0 +1,26 @@
+name: panvimdoc
+
+on:
+  push:
+    branches:
+      - 'main'
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    name: pandoc to vimdoc
+    steps:
+      - uses: actions/checkout@v2
+      - uses: kdheepak/panvimdoc@main
+        with:
+          vimdoc: 'e-ink.nvim'
+          pandoc: 'README.md'
+          description: '*e-ink.nvim*'
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Github Actions : generate Vimdoc from README"
+          branch: ${{ github.head_ref }}
