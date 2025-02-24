@@ -1,17 +1,25 @@
 local M = {}
-local mono = require("e-ink.palette").mono
-local everforest = require("e-ink.palette").everforest
-local set_hl = vim.api.nvim_set_hl
+local generate_syntax = require("e-ink.syntax").generate_syntax
 
-local config = {
-   transparent_bg = false
-}
+--- nvim-notify support
+---@param message string notify message
+---@param log_level string|nil vim.log.levels
+---@return function vim.notify
+local function notify(message, log_level)
+   return vim.notify(message, log_level, { title = "e-ink.nvim" })
+end
 
-M.setup = function(plugin_opts)
+function M.setup()
    vim.cmd([[highlight clear]])
    vim.opt.background = "light"
    vim.opt.termguicolors = true
    vim.g.colors_name = "e-ink"
+
+   if generate_syntax then
+      return generate_syntax()
+   else
+      return notify("colorscheme loading failed", "ERROR")
+   end
 end
 
 return M
