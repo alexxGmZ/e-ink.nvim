@@ -10,6 +10,9 @@ for NeoVim.
 Good for Note-taking.
 ![Screenshot_2025-02-24_19-22-16](https://github.com/user-attachments/assets/1e2fa144-949c-4bb2-82e1-4e5825f9a87c)
 
+Lua, Go, & JavaScript.
+![Screenshot_2025-02-25_10-11-05](https://github.com/user-attachments/assets/b666239d-8d29-4331-b806-b4d25661ddd9)
+
 &nbsp;
 
 ## Installation
