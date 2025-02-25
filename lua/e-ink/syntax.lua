@@ -103,6 +103,7 @@ function M.generate_syntax()
    set_hl("@markup.link.label", { bold = true, underline = false })
    set_hl("@markup.link.url", { bold = false, underline = true, italic = true })
    set_hl("@markup.quote", { fg = mono[8] })
+   set_hl("@markup.raw", { fg = mono[8] })
    set_hl("@markup.strong", { fg = mono[16], bold = true })
    set_hl("@variable", { fg = mono[16] })
 
