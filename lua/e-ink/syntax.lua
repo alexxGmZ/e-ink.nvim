@@ -80,6 +80,12 @@ function M.generate_syntax()
    set_hl("DiffChange", { bg = everforest.blue2 })
    set_hl("DiffDelete", { bg = everforest.red3 })
    set_hl("DiffText", { bg = everforest.blue1 })
+   set_hl("diffAdded", { link = "DiagnosticOk" })
+   set_hl("diffChanged", { link = "DiagnosticHint" })
+   set_hl("diffRemoved", { link = "DiagnosticError" })
+   set_hl("@diff.plus", { link = "DiagnosticOk" })
+   set_hl("@diff.delta", { link = "DiagnosticHint" })
+   set_hl("@diff.minus", { link = "DiagnosticError" })
 
    -- nvim-notify
    set_hl("NotifyInfoIcon", { link = "DiagnosticOk" })
