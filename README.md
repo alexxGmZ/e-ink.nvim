@@ -35,9 +35,11 @@ return {
 ## Highlight Override
 
 For overriding highlight groups, just call the `palette` API and use
-`vim.api.nvim_set_hl`.
+`vim.api.nvim_set_hl` after the colorscheme declaration.
 
 ```lua
+vim.cmd.colorscheme "e-ink"
+
 local set_hl = vim.api.nvim_set_hl
 local mono = require("e-ink.palette").mono
 --[[
