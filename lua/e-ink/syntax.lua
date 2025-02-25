@@ -10,6 +10,24 @@ end
 function M.generate_syntax()
    local mono = require("e-ink.palette").mono
    local everforest = require("e-ink.palette").everforest
+   local set_var = vim.api.nvim_set_var
+
+   set_var("terminal_color_0", mono[1])
+   set_var("terminal_color_1", everforest.red1)
+   set_var("terminal_color_2", everforest.green1)
+   set_var("terminal_color_3", everforest.yellow1)
+   set_var("terminal_color_4", everforest.blue1)
+   set_var("terminal_color_5", everforest.magenta1)
+   set_var("terminal_color_6", everforest.cyan1)
+   set_var("terminal_color_7", mono[8])
+   set_var("terminal_color_8", mono[9])
+   set_var("terminal_color_9", everforest.red1)
+   set_var("terminal_color_10", everforest.green1)
+   set_var("terminal_color_11", everforest.yellow1)
+   set_var("terminal_color_12", everforest.blue1)
+   set_var("terminal_color_13", everforest.magenta1)
+   set_var("terminal_color_14", everforest.cyan1)
+   set_var("terminal_color_15", mono[16])
 
    set_hl("ColorColumn", { link = "CursorLine" })
    set_hl("Comment", { fg = mono[7], italic = true })
