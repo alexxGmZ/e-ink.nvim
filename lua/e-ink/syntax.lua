@@ -92,6 +92,8 @@ function M.generate_syntax()
    -- FzfLua
    set_hl("FzfLuaBufNr", { fg = mono[5] })
    set_hl("FzfLuaHeaderBind", { fg = mono[5] })
+   set_hl("FzfLuaLivePrompt", { fg = mono[12] })
+   set_hl("FzfLuaLiveSym", { fg = mono[12] })
    set_hl("FzfLuaPathLineNr", { fg = mono[5] })
    set_hl("FzfLuaTabMarker", { fg = mono[15] })
 end
