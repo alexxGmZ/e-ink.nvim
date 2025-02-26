@@ -66,22 +66,22 @@ local mono = require("e-ink.palette").mono
 local everforest = require("e-ink.palette").everforest
 --[[
 {
-   red1 = "#F85552",
-   red2 = "#E66868",
-   red3 = "#FFE7DE",
-   yellow1 = "#DFA000",
-   green1 = "#8DA101",
-   green2 = "#93B259",
-   green3 = "#f3f5d9",
-   blue1 = "#3A94C5",
-   blue2 = "#ECF5ED",
-   cyan1 = "#35A77C",
-   magenta1 = "#DF69BA"
+   red = "#F85552",
+   statusline3 = "#E66868",
+   bg_red = "#FFE7DE",
+   yellow = "#DFA000",
+   green = "#8DA101",
+   statusline1 = "#93B259",
+   bg_green = "#f3f5d9",
+   blue = "#3A94C5",
+   bg_blue = "#ECF5ED",
+   aqua = "#35A77C",
+   purple = "#DF69BA"
 }
 ]]
 
 set_hl(0, "Group", { fg = mono[15] })
-set_hl(0, "Group", { fg = everforest.green1 })
+set_hl(0, "Group", { fg = everforest.green })
 ```
 
 &nbsp;
