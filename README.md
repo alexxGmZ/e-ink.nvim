@@ -1,6 +1,6 @@
 # e-ink.nvim
 
-A light-mode grayscale colorscheme with a hint of [Everforest](https://github.com/sainnhe/everforest)
+A grayscale colorscheme with a hint of [Everforest](https://github.com/sainnhe/everforest)
 for NeoVim.
 
 ![palette](https://github.com/user-attachments/assets/38009bf4-b9b0-418b-b855-c9e640e4e03a)
@@ -26,6 +26,14 @@ return {
    config = function ()
       require("e-ink").setup()
       vim.cmd.colorscheme "e-ink"
+
+      -- choose light mode or dark mode
+      -- vim.opt.background = "dark"
+      -- vim.opt.background = "light"
+      --
+      -- or do
+      -- :set background=dark
+      -- :set background=light
    end
 }
 ```
@@ -38,33 +46,26 @@ For overriding highlight groups, just call the `palette` API and use
 `vim.api.nvim_set_hl` after the colorscheme declaration.
 
 ```lua
-vim.cmd.colorscheme "e-ink"
-
 local set_hl = vim.api.nvim_set_hl
-local mono = require("e-ink.palette").mono
+local mono = require("e-ink.palette").mono()
+
 --[[
+-- light mode
 {
-   "#CCCCCC",   -- 1
-   "#C2C2C2",   -- 2
-   "#B8B8B8",   -- 3
-   "#AEAEAE",   -- 4
-   "#A4A4A4",   -- 5
-   "#9A9A9A",   -- 6
-   "#909090",   -- 7
-   "#868686",   -- 8
-   "#7C7C7C",   -- 9
-   "#727272",   -- 10
-   "#686868",   -- 11
-   "#5E5E5E",   -- 12
-   "#545454",   -- 13
-   "#4A4A4A",   -- 14
-   "#474747",   -- 15
-   "#333333"    -- 16
+   "#CCCCCC", "#C2C2C2", "#B8B8B8", "#AEAEAE", "#A4A4A4", "#9A9A9A", "#909090", "#868686",
+   "#7C7C7C", "#727272", "#686868", "#5E5E5E", "#545454", "#4A4A4A", "#474747", "#333333"
+}
+
+-- dark mode
+{
+   "#333333", "#474747", "#4A4A4A", "#545454", "#5E5E5E", "#686868", "#727272", "#7C7C7C",
+   "#868686", "#909090", "#9A9A9A", "#A4A4A4", "#AEAEAE", "#B8B8B8", "#C2C2C2", "#CCCCCC"
 }
 ]]
 
-local everforest = require("e-ink.palette").everforest
+local everforest = require("e-ink.palette").everforest()
 --[[
+-- light mode
 {
    red = "#F85552",
    statusline3 = "#E66868",
@@ -77,6 +78,21 @@ local everforest = require("e-ink.palette").everforest
    bg_blue = "#ECF5ED",
    aqua = "#35A77C",
    purple = "#DF69BA"
+}
+
+-- dark mode
+{
+   red = "#E67E80",
+   statusline3 = "#E67E80",
+   bg_red = "#4C3743",
+   yellow = "#DBBC7F",
+   green = "#A7C080",
+   statusline1 = "#A7C080",
+   bg_green = "#3C4841",
+   blue = "#7FBBB3",
+   bg_blue = "#384B55",
+   aqua = "#83C092",
+   purple = "#D699B6"
 }
 ]]
 
