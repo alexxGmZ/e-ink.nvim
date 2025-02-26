@@ -1,4 +1,4 @@
-local mono = require("e-ink.palette").mono
+local mono = require("e-ink.palette").mono()
 
 return {
    normal = {

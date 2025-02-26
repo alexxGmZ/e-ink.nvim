@@ -8,8 +8,8 @@ local function set_hl(group, styles)
 end
 
 function M.generate_syntax()
-   local mono = require("e-ink.palette").mono
-   local everforest = require("e-ink.palette").everforest
+   local mono = require("e-ink.palette").mono()
+   local everforest = require("e-ink.palette").everforest()
    local set_var = vim.api.nvim_set_var
 
    set_var("terminal_color_0", mono[1])
