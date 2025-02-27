@@ -105,6 +105,27 @@ set_hl(0, "Group", { fg = mono[15] })
 set_hl(0, "Group", { fg = everforest.green })
 ```
 
+### Transparent Background
+
+```lua
+local set_hl = vim.api.nvim_set_hl
+local mono = require("e-ink.palette").mono()
+
+set_hl(0, "Normal", { fg = mono[12], bg = "NONE" })
+```
+
+or depending on the value of `vim.o.background`.
+
+```lua
+local set_hl = vim.api.nvim_set_hl
+local mono = require("e-ink.palette").mono()
+
+-- transparent only when `:set background=dark`
+if vim.o.background == "dark" then
+   set_hl(0, "Normal", { fg = mono[12], bg = "NONE" })
+end
+```
+
 &nbsp;
 
 ## Special Thanks
