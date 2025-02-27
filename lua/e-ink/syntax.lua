@@ -105,6 +105,9 @@ function M.generate_syntax()
    set_hl("@markup.quote", { fg = mono[8] })
    set_hl("@markup.raw", { fg = mono[8] })
    set_hl("@markup.strong", { fg = mono[16], bold = true })
+   set_hl("@tag", { fg = mono[10], bold = true })
+   set_hl("@tag.attribute", { fg = mono[14], bold = true })
+   set_hl("@tag.delimiter", { fg = mono[8], bold = false })
    set_hl("@variable", { fg = mono[16] })
 
    -- treesitter-context
