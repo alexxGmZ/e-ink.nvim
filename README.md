@@ -13,6 +13,11 @@ Good for Note-taking.
 Lua, Go, & JavaScript.
 ![Screenshot_2025-02-25_10-11-05](https://github.com/user-attachments/assets/b666239d-8d29-4331-b806-b4d25661ddd9)
 
+Dark Mode
+![dark-mode-3](https://github.com/user-attachments/assets/32cde8dc-772f-41d6-99f8-c4e431a40bf0)
+
+![dark-mode-2](https://github.com/user-attachments/assets/86c2abcf-de44-4749-8e2c-da5d9a87a54b)
+
 &nbsp;
 
 ## Installation
