@@ -51,7 +51,8 @@ local everforest = {
       blue = "#7FBBB3",
       bg_blue = "#384B55",
       aqua = "#83C092",
-      purple = "#D699B6"
+      purple = "#D699B6",
+      orange = "#E69875"
    },
    light = {
       red = "#F85552",
@@ -64,7 +65,8 @@ local everforest = {
       blue = "#3A94C5",
       bg_blue = "#ECF5ED",
       aqua = "#35A77C",
-      purple = "#DF69BA"
+      purple = "#DF69BA",
+      orange = "#F57D26"
    }
 }
 
