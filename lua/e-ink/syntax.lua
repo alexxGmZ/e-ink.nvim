@@ -1,8 +1,8 @@
 local M = {}
 
---- Wrapper for nvim.api.nvim_set_hl
----@param group string
----@param styles any
+--- Wrapper for nvim.api.nvim_set_hl (:h nvim_set_hl()).
+---@param group string Highlight group name.
+---@param styles table Highlight definition map.
 local function set_hl(group, styles)
    vim.api.nvim_set_hl(0, group, styles)
 end

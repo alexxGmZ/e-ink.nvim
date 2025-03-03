@@ -70,10 +70,14 @@ local everforest = {
    }
 }
 
+--- Function returning the mono (greyscale) palette.
+---@return table - Mono palette depending on the background type.
 function M.mono()
    return mono[vim.o.background]
 end
 
+--- Function returning the everforest palette.
+---@return table - Everforest palette depending on the background type.
 function M.everforest()
    return everforest[vim.o.background]
 end
