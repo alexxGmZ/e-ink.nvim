@@ -133,6 +133,7 @@ end
 ## Application Ports
 
 * [Kitty](https://github.com/alexxGmZ/e-ink.kitty)
+* [cmus](https://github.com/alexxGmZ/e-ink.cmus)
 
 &nbsp;
 
