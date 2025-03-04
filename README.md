@@ -130,6 +130,12 @@ end
 
 &nbsp;
 
+## Application Ports
+
+* [Kitty](https://github.com/alexxGmZ/e-ink.kitty)
+
+&nbsp;
+
 ## Special Thanks
 
 The inspiration for this colorscheme is from this [r/unixporn post](https://www.reddit.com/r/unixporn/comments/1ivfd53/rectangle_i_really_really_like_eink/)
