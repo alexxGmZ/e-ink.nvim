@@ -6,6 +6,7 @@ Table of Contents                               *e-ink.nvim-table-of-contents*
 1. e-ink.nvim                                          |e-ink.nvim-e-ink.nvim|
   - Installation                          |e-ink.nvim-e-ink.nvim-installation|
   - Highlight Override              |e-ink.nvim-e-ink.nvim-highlight-override|
+  - Application Ports                |e-ink.nvim-e-ink.nvim-application-ports|
   - Special Thanks                      |e-ink.nvim-e-ink.nvim-special-thanks|
 2. Links                                                    |e-ink.nvim-links|
 
@@ -133,6 +134,13 @@ or depending on the value of `vim.o.background`.
        set_hl(0, "Normal", { fg = mono[12], bg = "NONE" })
     end
 <
+
+ 
+
+
+APPLICATION PORTS                    *e-ink.nvim-e-ink.nvim-application-ports*
+
+- Kitty <https://github.com/alexxGmZ/e-ink.kitty>
 
  
 
