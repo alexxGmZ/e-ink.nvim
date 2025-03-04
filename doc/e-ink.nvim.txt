@@ -141,6 +141,7 @@ or depending on the value of `vim.o.background`.
 APPLICATION PORTS                    *e-ink.nvim-e-ink.nvim-application-ports*
 
 - Kitty <https://github.com/alexxGmZ/e-ink.kitty>
+- cmus <https://github.com/alexxGmZ/e-ink.cmus>
 
  
 
