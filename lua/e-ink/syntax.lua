@@ -129,6 +129,11 @@ function M.generate_syntax()
    set_hl("htmlArg", { link = "@tag.attribute" })
    set_hl("htmlTag", { link = "@tag.delimiter" })
    set_hl("htmlTagName", { link = "@tag" })
+
+   -- xml
+   set_hl("xmlAttrib", { link = "@tag.attribute" })
+   set_hl("xmlTag", { link = "@tag.delimiter" })
+   set_hl("xmlTagName", { link = "@tag" })
 end
 
 return M
