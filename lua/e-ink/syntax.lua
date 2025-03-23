@@ -124,6 +124,11 @@ function M.generate_syntax()
    set_hl("FzfLuaLiveSym", { fg = mono[12] })
    set_hl("FzfLuaPathLineNr", { fg = mono[5] })
    set_hl("FzfLuaTabMarker", { fg = mono[15] })
+
+   -- html
+   set_hl("htmlArg", { link = "@tag.attribute" })
+   set_hl("htmlTag", { link = "@tag.delimiter" })
+   set_hl("htmlTagName", { link = "@tag" })
 end
 
 return M
