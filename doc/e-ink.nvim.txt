@@ -142,6 +142,7 @@ APPLICATION PORTS                    *e-ink.nvim-e-ink.nvim-application-ports*
 
 - Kitty <https://github.com/alexxGmZ/e-ink.kitty>
 - cmus <https://github.com/alexxGmZ/e-ink.cmus>
+- termux <https://github.com/alexxGmZ/e-ink.termux>
 
  
 
