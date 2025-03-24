@@ -134,6 +134,7 @@ end
 
 * [Kitty](https://github.com/alexxGmZ/e-ink.kitty)
 * [cmus](https://github.com/alexxGmZ/e-ink.cmus)
+* [termux](https://github.com/alexxGmZ/e-ink.termux)
 
 &nbsp;
 
