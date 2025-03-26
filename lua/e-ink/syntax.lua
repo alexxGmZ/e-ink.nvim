@@ -45,6 +45,7 @@ function M.generate_syntax()
    set_hl("Normal", { fg = mono[12], bg = mono[1] })
    set_hl("NormalFloat", { link = "Normal" })
    set_hl("Operator", { fg = mono[14] })
+   set_hl("PMenu", { bg = mono[2] })
    set_hl("Question", { link = "MoreMsg" })
    set_hl("QuickFixLine", { link = "MoreMsg" })
    set_hl("Search", { fg = mono[6], reverse = true })
@@ -134,6 +135,13 @@ function M.generate_syntax()
    set_hl("xmlAttrib", { link = "@tag.attribute" })
    set_hl("xmlTag", { link = "@tag.delimiter" })
    set_hl("xmlTagName", { link = "@tag" })
+
+   -- blink-cmp
+   set_hl("BlinkCmpDoc", { link = "Pmenu" })
+   set_hl("BlinkCmpDocBorder", { link = "Pmenu" })
+   set_hl("BlinkCmpDocSeparator", { link = "Pmenu" })
+   set_hl("BlinkCmpMenuSelection", { link = "Visual" })
+
 end
 
 return M
