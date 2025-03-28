@@ -66,6 +66,8 @@ function M.generate_syntax()
    set_hl("Type", { fg = mono[13] })
    set_hl("Visual", { bg = mono[4] })
    set_hl("WarningMsg", { fg = everforest.yellow })
+   set_hl("WinBar", { bg = mono[4] })
+   set_hl("WinBarNC", { link = "WinBar" })
    set_hl("WinSeparator", { fg = mono[9] })
 
    set_hl("Added", { fg = everforest.green })
