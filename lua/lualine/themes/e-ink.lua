@@ -32,8 +32,8 @@ return {
       c = { bg = mono[2], fg = mono[12] },
    },
    inactive = {
-      a = { bg = mono[1], fg = mono[9], gui = "bold" },
-      b = { bg = mono[1], fg = mono[9] },
-      c = { bg = mono[1], fg = mono[9] },
+      a = { bg = mono[2], fg = mono[9], gui = "bold" },
+      b = { bg = mono[2], fg = mono[9] },
+      c = { bg = mono[2], fg = mono[9] },
    },
 }
