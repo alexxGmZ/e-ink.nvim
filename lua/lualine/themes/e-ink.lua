@@ -22,12 +22,12 @@ return {
       c = { bg = mono[2], fg = mono[12] },
    },
    command = {
-      a = { bg = mono[16], fg = mono[1], gui = "bold" },
+      a = { bg = mono[15], fg = mono[1], gui = "bold" },
       b = { bg = mono[4], fg = mono[14] },
       c = { bg = mono[2], fg = mono[12] },
    },
    terminal = {
-      a = { bg = mono[16], fg = mono[1], gui = "bold" },
+      a = { bg = mono[15], fg = mono[1], gui = "bold" },
       b = { bg = mono[4], fg = mono[14] },
       c = { bg = mono[2], fg = mono[12] },
    },
