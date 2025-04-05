@@ -1,5 +1,4 @@
 local M = {}
-
 --- Wrapper for nvim.api.nvim_set_hl (:h nvim_set_hl()).
 ---@param group string Highlight group name.
 ---@param styles table Highlight definition map.
@@ -8,9 +7,46 @@ local function set_hl(group, styles)
 end
 
 function M.generate_syntax()
+   local set_var = vim.api.nvim_set_var
    local mono = require("e-ink.palette").mono()
    local everforest = require("e-ink.palette").everforest()
-   local set_var = vim.api.nvim_set_var
+   local lsp_kind_colors = {
+      Array = everforest.aqua,
+      Boolean = everforest.aqua,
+      Class = everforest.yellow,
+      Color = everforest.aqua,
+      Constant = everforest.blue,
+      Constructor = everforest.green,
+      Default = everforest.aqua,
+      Enum = everforest.yellow,
+      EnumMember = everforest.purple,
+      Event = everforest.orange,
+      Field = everforest.green,
+      File = everforest.green,
+      Folder = everforest.aqua,
+      Function = everforest.green,
+      Interface = everforest.yellow,
+      Key = everforest.red,
+      Keyword = everforest.red,
+      Method = everforest.green,
+      Module = everforest.yellow,
+      Namespace = everforest.purple,
+      Null = everforest.aqua,
+      Number = everforest.aqua,
+      Object = everforest.aqua,
+      Operator = everforest.orange,
+      Package = everforest.purple,
+      Property = everforest.blue,
+      Reference = everforest.aqua,
+      Snippet = everforest.aqua,
+      String = everforest.aqua,
+      Struct = everforest.yellow,
+      Text = mono[12],
+      TypeParameter = everforest.yellow,
+      Unit = everforest.purple,
+      Value = everforest.purple,
+      Variable = everforest.blue,
+   }
 
    set_var("terminal_color_0", mono[1])
    set_var("terminal_color_1", everforest.red)
@@ -147,7 +183,9 @@ function M.generate_syntax()
    set_hl("BlinkCmpDocBorder", { link = "Pmenu" })
    set_hl("BlinkCmpDocSeparator", { link = "Pmenu" })
    set_hl("BlinkCmpMenuSelection", { link = "Visual" })
-
+   for kind, color in pairs(lsp_kind_colors) do
+      set_hl("BlinkCmpKind" .. kind, { fg = color })
+   end
 end
 
 return M
