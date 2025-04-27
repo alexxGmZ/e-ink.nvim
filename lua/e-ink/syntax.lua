@@ -205,6 +205,21 @@ function M.generate_syntax()
    set_hl("fugitiveUntrackedModifier", { link = "fugitiveUntrackedHeading" })
    set_hl("fugitiveUnstagedHeading", { fg = everforest.orange, bold = true })
    set_hl("fugitiveUnstagedModifier", { link = "fugitiveUnstagedHeading" })
+
+   -- lazy.nvim
+   set_hl("Bold", { fg = mono[16], bold = true })
+   set_hl("LazyCommitIssue", { fg = everforest.orange, bold = true })
+   set_hl("LazyCommitType", { fg = mono[16], bold = true })
+   set_hl("LazyReasonCmd", { fg = everforest.yellow })
+   set_hl("LazyReasonEvent", { fg = everforest.orange })
+   set_hl("LazyReasonFt", { fg = everforest.green })
+   set_hl("LazyReasonImport", { fg = everforest.blue })
+   set_hl("LazyReasonIssue", { fg = everforest.orange })
+   set_hl("LazyReasonKeys", { fg = everforest.red })
+   set_hl("LazyReasonPlugin", { fg = everforest.yellow })
+   set_hl("LazyReasonRequire", { fg = everforest.red })
+   set_hl("LazyReasonSource", { fg = everforest.aqua })
+   set_hl("LazyReasonStart", { fg = everforest.blue })
 end
 
 return M
