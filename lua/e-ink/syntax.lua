@@ -193,6 +193,18 @@ function M.generate_syntax()
    for kind, color in pairs(lsp_kind_colors) do
       set_hl("BlinkCmpKind" .. kind, { fg = color })
    end
+
+   -- vim-fugitive
+   set_hl("diffFile", { fg = everforest.orange, bold = true })
+   set_hl("diffLine", { fg = everforest.blue, bold = true })
+   set_hl("diffNewFile", { fg = everforest.green, bold = true })
+   set_hl("diffOldFile", { fg = everforest.red, bold = true })
+   set_hl("fugitiveStagedHeading", { fg = everforest.green, bold = true })
+   set_hl("fugitiveStagedModifier", { link = "fugitiveStagedHeading" })
+   set_hl("fugitiveUntrackedHeading", { fg = everforest.red, bold = true })
+   set_hl("fugitiveUntrackedModifier", { link = "fugitiveUntrackedHeading" })
+   set_hl("fugitiveUnstagedHeading", { fg = everforest.orange, bold = true })
+   set_hl("fugitiveUnstagedModifier", { link = "fugitiveUnstagedHeading" })
 end
 
 return M
