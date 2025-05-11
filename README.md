@@ -136,6 +136,7 @@ end
 * [cmus](https://github.com/alexxGmZ/e-ink.cmus)
 * [termux](https://github.com/alexxGmZ/e-ink.termux)
 * [ghostty](https://github.com/alexxGmZ/e-ink.ghostty)
+* [Sublime Text](https://github.com/alexxGmZ/e-ink.subl)
 
 &nbsp;
 
