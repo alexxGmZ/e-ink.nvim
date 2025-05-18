@@ -26,7 +26,7 @@ Dark Mode
 
 ```lua
 return {
-   "alexxGmZ/e-ink.nvim",
+   "e-ink-colorscheme/e-ink.nvim",
    priority = 1000,
    config = function ()
       require("e-ink").setup()
@@ -132,11 +132,11 @@ end
 
 ## Application Ports
 
-* [Kitty](https://github.com/alexxGmZ/e-ink.kitty)
-* [cmus](https://github.com/alexxGmZ/e-ink.cmus)
-* [termux](https://github.com/alexxGmZ/e-ink.termux)
-* [ghostty](https://github.com/alexxGmZ/e-ink.ghostty)
-* [Sublime Text](https://github.com/alexxGmZ/e-ink.subl)
+* [Kitty](https://github.com/e-ink-colorscheme/e-ink.kitty)
+* [cmus](https://github.com/e-ink-colorscheme/e-ink.cmus)
+* [termux](https://github.com/e-ink-colorscheme/e-ink.termux)
+* [ghostty](https://github.com/e-ink-colorscheme/e-ink.ghostty)
+* [Sublime Text](https://github.com/e-ink-colorscheme/e-ink.subl)
 
 &nbsp;
 
